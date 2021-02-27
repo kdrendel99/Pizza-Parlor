@@ -6,20 +6,20 @@ function Pizza(size, cheese, toppings, extra) {
   this.currentPrice = 10;
 }
 
-Pizza.prototype.toppingsPrice = function(){
+Pizza.prototype.toppingsPrice = function(toppings){
   for(let i=1; i <=this.toppings; i ++){
     this.currentPrice = this.currentPrice+.25
-    return this.currentPrice;
+    console.log(this.currentPrice);
   };
-  console.log(this.currentPrice);
+  return this.currentPrice;
 }
 
-Pizza.prototype.extrasPrice = function(){
-  for(let i=1; i <=10; i ++){
+Pizza.prototype.extrasPrice = function(extra){
+  for(let i=1; i <=this.extra; i ++){
     this.currentPrice = this.currentPrice+1
-    return this.currentPrice;
+    console.log(this.currentPrice);
   };
-  console.log(this.currentPrice);
+  return this.currentPrice;
 }
 
 const pizzaSize = {
