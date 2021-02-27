@@ -35,10 +35,9 @@ _No bugs!_
 ## Specs
 
 
-Describe: 
-
-Test: ""
-Expect
+Describe: toppingsPrice();
+Test: "It increases the current price of the pizza by $.25 for each topping added."
+Expect(toppingsPrice(1)).toEqual(10.25);
 
 ## License
 _MIT License_
