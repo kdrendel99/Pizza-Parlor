@@ -23,36 +23,36 @@ Pizza.prototype.extrasPrice = function(extra){
 }
 
 const pizzaSize = {
-  "1" : ["Small"],
-  "2" : ["Medium"],
-  "3" : ["Large"],
-  "4" : ["Giant"],
+  "1" : "Small",
+  "2" : "Medium",
+  "3" : "Large",
+  "4" : "Giant",
 }
 
 
 // USER INTERFACE CODE 
 
 
-// $(document).ready(function() {
-//   $("form#pizza").submit(function(event){
-//     event.preventDefault();
-//     const pizzaSizeInput = $("#size").val();
-//     const pizzaCheeseInput = $("#cheese").val();
-//     console.log(pizzaSizeInput,pizzaCheeseInput);
-//     $('input[name="toppings"]:checked').val();
+$(document).ready(function() {
+  $("form#pizza").submit(function(event){
+    event.preventDefault();
+    const sizeInput = $("#size").val();
+    const cheeseInput = $("#cheese").val();
+    const toppingInput = $("input:checkbox[name=toppings]:checked").each(function(){
+      const toppingInput= $(this).val();
+      $('#pizza').append(toppingInput);
+    });
+    
+    let pizza = new Pizza(sizeInput, cheeseInput,toppingInput,"null");
 
-//     let pizza = new Pizza(pizzaSize[pizzaSizeInput][0], pizzaCheeseInput,"toppings", "extras");
+console.log(pizza);
 
-// $("#result").show();
-// $("pizza-size").text(pizza.size);
-// $("pizza-cheese").text(pizza.cheese);
+$("#result").show();
+$("pizza-size").text(pizza.size);
+$("pizza-cheese").text(pizza.cheese);
 // $("pizza-toppings").text(pizza.toppings);
-// $("pizza-extras").text(pizza.extra);
-// $("pizza-price").text(pizza.currentPrice);
-//   });
-// });
+$("pizza-extras").text(pizza.extra);
+$("pizza-price").text(pizza.currentPrice);
+  });
+});
 
-
-
-
-let karlspizza = new Pizza(0,0,0,0);
