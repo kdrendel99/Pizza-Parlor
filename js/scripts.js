@@ -40,7 +40,7 @@ $(document).ready(function() {
     const cheeseInput = $("#cheese").val();
     const toppingInput = $("input:checkbox[name=toppings]:checked").each(function(){
       const toppingInput= $(this).val();
-      $('#pizza').append(toppingInput);
+      $('#pizza-toppings').append(toppingInput);
     });
     
     let pizza = new Pizza(sizeInput, cheeseInput,toppingInput,"null");
