@@ -39,6 +39,10 @@ Describe: toppingsPrice();
 Test: "It increases the current price of the pizza by $.25 for each topping added."
 Expect(toppingsPrice(1)).toEqual(10.25);
 
+Describe: extrasPrice();
+Test: "It increases the current price of the pizza by $1 for each topping added."
+Expect(extrasPrice(1)).toEqual(11.00);
+
 ## License
 _MIT License_
 _Copyright (c) 2021 Karlson Drendel_

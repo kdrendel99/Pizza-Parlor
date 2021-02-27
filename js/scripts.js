@@ -7,7 +7,7 @@ function Pizza(size, cheese, toppings, extra) {
 }
 
 Pizza.prototype.toppingsPrice = function(){
-  for(let i=1; i <=10; i ++){
+  for(let i=1; i <=this.toppings; i ++){
     this.currentPrice = this.currentPrice+.25
     return this.currentPrice;
   };
@@ -28,6 +28,7 @@ const pizzaSize = {
   "3" : ["Large"],
   "4" : ["Giant"],
 }
+
 
 // USER INTERFACE CODE 
 
@@ -50,6 +51,7 @@ const pizzaSize = {
 // $("pizza-price").text(pizza.currentPrice);
 //   });
 // });
+
 
 
 
