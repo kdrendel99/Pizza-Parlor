@@ -23,8 +23,8 @@ function Pizza(size, cheese, toppings, extra) {
   } 
 
 function finalCost(pizza){
-  pizza.toppingsPrice();
-  pizza.extrasPrice();
+  pizza.prototype.toppingsPrice();
+  pizza.prototype.extrasPrice();
   console.log("help");
   return pizza.currentPrice;
 }
@@ -55,15 +55,19 @@ $(document).ready(function() {
 
     let pizza = new Pizza(sizeInput, cheeseInput,toppingInput,extraInput);
 
-    let pizzaCost = finalCost(Pizza);
-// console.log(pizza);
+
+    // let pizzaCost = finalCost(pizza);
+    pizza.toppingsPrice();
+    pizza.extrasPrice();
+
+console.log(pizza.currentPrice + "is the current pizza cost");
 
 $("#result").show();
 $("#pizza-size").text(pizza.size);
 $("#pizza-cheese").text(pizza.cheese);
 // $("pizza-toppings").text(pizza.toppings);
 // $("pizza-extras").text(pizza.extra);
-$("#pizza-price").text(pizzaCost);
+$("#pizza-price").text(pizza.currentPrice);
   });
 });
 
