@@ -22,7 +22,7 @@ function Pizza(size, cheese, toppings, extra) {
     return this.currentPrice;
   } 
 
-finalCost = function(toppings,extra){
+function finalCost(){
   pizza.toppingsPrice();
   pizza.extrasPrice();
 }
@@ -51,10 +51,9 @@ $(document).ready(function() {
       const extraInput = $(this).val(); $('#pizza-extras').append(extraInput + ", ");
     });
 
-    let pizzaCost = pizza.finalCost(toppings,extra);
+    let pizza = new Pizza(sizeInput, cheeseInput,toppingInput,extraInput);
 
-    let pizza = new Pizza(sizeInput, cheeseInput,toppingInput, extraInput);
-
+    let pizzaCost = finalCost(Pizza);
 console.log(pizza);
 
 $("#result").show();
