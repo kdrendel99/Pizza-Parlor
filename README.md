@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _{Pizza Parlor}_
 
-#### _{Brief description of application}_
+#### _{Ciao! Welcome to my online pizza parlor template. I used object orientation to build a makeshift pizza ordering application that adjusts the total cost according to how many toppings and extras the user has selected.}_
 
-#### By _**Karlson Drendel {List of contributors}**_
+#### By _**Karlson Drendel**_
 
 ## Technologies Used
 * _HTML_
@@ -12,25 +12,20 @@
 * _Bootstrap_
 
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
-
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_{The function of this application was to practice using my object orientation knowledge. I used constructors and prototypes to build a simplistic site that allows the user to build their own pizza and generates a cost for them.}_
 
 ## Setup/Installation Requirements
 
 * _Open terminal_
 * _Create a desired directory to store repo clone using $ mkdir_
-* _Navigate to local directory in terminal and enter $ git clone_
+* _Navigate to local directory in terminal and enter $ git clone https://github.com/kdrendel99/Pizza-Parlor.git_
 * _Use the '$ touch index.html' function to select, followed by '$ code .'_
 
 ## Known Bugs
 
-_No bugs!_
+_The user is required to have to enter the amount of selections they made instead of the application knowing and storing that information. I struggled to find a way to display the value of the selected check boxes to the user while also using a counter to determine how many toppings the user had added on at $0.25 a piece. I intend on fixing this in the near future._
 
 ## Specs
 
