@@ -27,14 +27,6 @@ function finalCost(pizza) {
   return pizza.currentPrice;
 }
 
-const pizzaSize = {
-  "1": "Small",
-  "2": "Medium",
-  "3": "Large",
-  "4": "Giant",
-}
-
-
 // USER INTERFACE CODE 
 
 
@@ -56,16 +48,12 @@ $(document).ready(function() {
 
     let pizza = new Pizza(sizeInput, cheeseInput, toppingNum, extrasNum);
 
-
-    // let pizzaCost = finalCost(pizza);
     pizza.toppingsPrice();
     pizza.extrasPrice();
 
     $("#result").show();
     $("#pizza-size").text(pizza.size);
     $("#pizza-cheese").text(pizza.cheese);
-    // $("pizza-toppings").text(pizza.toppings);
-    // $("pizza-extras").text(pizza.extra);
     $("#pizza-price").text(pizza.currentPrice);
   });
 });

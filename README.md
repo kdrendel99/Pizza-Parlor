@@ -1,6 +1,6 @@
 # _{Pizza Parlor}_
 
-#### _{Ciao! Welcome to my online pizza parlor template. I used object orientation to build a makeshift pizza ordering application that adjusts the total cost according to how many toppings and extras the user has selected.}_
+#### _Ciao! Welcome to my online pizza parlor template. I used object orientation to build a makeshift pizza ordering application that adjusts the total cost according to how many toppings and extras the user has selected._
 
 #### By _**Karlson Drendel**_
 
@@ -14,7 +14,7 @@
 
 ## Description
 
-_{The function of this application was to practice using my object orientation knowledge. I used constructors and prototypes to build a simplistic site that allows the user to build their own pizza and generates a cost for them.}_
+_The function of this application was to practice using my object orientation knowledge. I used constructors and prototypes to build a simplistic site that allows the user to build their own pizza and generates a cost for them._
 
 ## Setup/Installation Requirements
 
