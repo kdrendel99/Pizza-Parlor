@@ -21,7 +21,7 @@ _The function of this application was to practice using my object orientation kn
 * _Open terminal_
 * _Create a desired directory to store repo clone using $ mkdir_
 * _Navigate to local directory in terminal and enter $ git clone https://github.com/kdrendel99/Pizza-Parlor.git_
-* _Use the '$ touch index.html' function to select, followed by '$ code .'_
+* _Use the '$ open index.html' function to open in browser._
 
 ## Known Bugs
 
