@@ -1,4 +1,4 @@
-# _{Pizza Parlor}_
+# _Pizza Parlor_
 
 #### _Ciao! Welcome to my online pizza parlor template. I used object orientation to build a makeshift pizza ordering application that adjusts the total cost according to how many toppings and extras the user has selected._
 
