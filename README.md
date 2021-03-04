@@ -33,6 +33,7 @@ _The user is required to have to enter the amount of selections they made instea
 Describe: toppingsPrice();
 Test: "It increases the current price of the pizza by $.25 for each topping added."
 Expect(toppingsPrice(1)).toEqual(10.25);
+**Note: Base Price of pizza is $10.
 
 Describe: extrasPrice();
 Test: "It increases the current price of the pizza by $1 for each topping added."
@@ -43,7 +44,7 @@ Describe: finalCost():
 Test: "It will calculate the final cost of the pizza by running the two previous functions back to back."
 Expect(finalCost(toppingsPrice,extrasPrice)).toEqual(11.25); 
 **Note: the number above is based on the previous tests.
-**Note: Base Price of pizza is $10.
+
 
 ## License
 _MIT License_
