@@ -21,7 +21,7 @@ _The function of this application was to practice using my object orientation kn
 * _Open terminal_
 * _Create a desired directory to store repo clone using $ mkdir_
 * _Navigate to local directory in terminal and enter $ git clone https://github.com/kdrendel99/Pizza-Parlor.git_
-* _Use the '$ open index.html' function to open in browser._
+* _Use the '$ open index.html' function to open project in a local browser._
 
 ## Known Bugs
 
@@ -44,7 +44,6 @@ Describe: finalCost():
 Test: "It will calculate the final cost of the pizza by running the two previous functions back to back."
 Expect(finalCost(toppingsPrice,extrasPrice)).toEqual(11.25); 
 **Note: the number above is based on the previous tests.
-
 
 ## License
 _MIT License_
