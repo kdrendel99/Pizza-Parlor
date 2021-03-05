@@ -3,131 +3,77 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.5.1.js">
-    </script>
-    <script src="js/scripts.js">
-    </script>
-    <title>Pizza Parlor
-    </title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Parlor</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>One Bite Pizza Shop
-        </h1>
+        <h1>One Bite Pizza Shop</h1>
         <form id="pizza">
           <div class="form-group">
-            <label for="size">Select your pizza size:
-            </label>
+            <label for="size">Select your pizza size:</label>
             <select class="form-control" id="size">
-              <option value="Small">Small (8")
-              </option>
-              <option value="Medium">Medium (12")
-              </option>
-              <option value="Large">Large (16")
-              </option>
-              <option value="Giant">Giant (20")
-              </option>
+              <option value="Small">Small (8")</option>
+              <option value="Medium">Medium (12")</option>
+              <option value="Large">Large (16")</option>
+              <option value="Giant">Giant (20")</option>
             </select>
             <br>
-            <label for="cheese">Select your cheese:
-            </label>
+            <label for="cheese">Select your cheese:</label>
             <select class="form-control" id="cheese">
-              <option value="Cheddar">Cheddar
-              </option>
-              <option value="Mozzerella">Mozzerella
-              </option>
-              <option value="Provolone">Provolone
-              </option>
-              <option value="Dairy Free">Dairy Free
-              </option>
+              <option value="Cheddar">Cheddar</option>
+              <option value="Mozzerella">Mozzerella</option>
+              <option value="Provolone">Provolone</option>
+              <option value="Dairy Free">Dairy Free</option>
             </select>
             <br>
-            <h4>Select your toppings: 
-            </h4>
-            <p>
-              <input type="checkbox" name="toppings" value="pepperoni">Pepperoni
-            </p>
-            <p>
-              <input type="checkbox" name="toppings" value="red sauce">Red sauce
-            </p>
-            <p>
-              <input type="checkbox" name="toppings" value="whiteSauce">White sauce
-            </p>
-            <p>
-              <input type="checkbox" name="toppings" value="pesto">Pesto
-            </p>
-            <p>
-              <input type="checkbox" name="toppings" value="salami">Salami
-            </p>
-            <p>
-              <input type="checkbox" name="toppings" value="pineapple">Pineapple
-            </p>
-            <p>
-              <input type="checkbox" name="toppings" value="mushrooms">Mushrooms
-            </p>
-            <p>
-              <input type="checkbox" name="toppings" value="rosemary">Rosemary
-            </p>
-            <p>
-              <input type="checkbox" name="toppings" value="red onions">Red Onions
-            </p>
-            <p>
-              <input type="checkbox" name="toppings" value="peppers">Peppers
-            </p>
+            <h4>Select your toppings: </h4>
+            <p>input type="checkbox" name="toppings" value="pepperoni">Pepperoni</p>
+            <p><input type="checkbox" name="toppings" value="red sauce">Red sauce</p>
+            <p><input type="checkbox" name="toppings" value="whiteSauce">White sauce</p>
+            <p><input type="checkbox" name="toppings" value="pesto">Pesto</p>
+            <p>input type="checkbox" name="toppings" value="salami">Salami</p>
+            <p><input type="checkbox" name="toppings" value="pineapple">Pineapple</p>
+            <p><input type="checkbox" name="toppings" value="mushrooms">Mushrooms</p>
+            <p><input type="checkbox" name="toppings" value="rosemary">Rosemary</p>
+            <p><input type="checkbox" name="toppings" value="red onions">Red Onions</p>
+            <p><input type="checkbox" name="toppings" value="peppers">Peppers</p>
             <br>
-            <label for="numToppings">Please enter the number of toppings you selected:
-            </label>
+            <label for="numToppings">Please enter the number of toppings you selected:</label>
             <input id="numToppings" class="form-control" type="text">
             <br>
-            <h4>Add some last-minute items?
-            </h4>
-            <p>
-              <em>Extras are an additional $1 per selection.
-              </em>
-            </p>
-            <p>
-              <input type="checkbox" name="extra" value="soft drink">Soft Drink
-            </p>
-            <p>
-              <input type="checkbox" name="extra" value="breadsticks">3 pack of breadsticks
-            </p>
-            <p>
-              <input type="checkbox" name="extra" value="extra sauce">Extra sauce
-            </p>
+            <h4>Add some last-minute items?</h4>
+            <p><em>Extras are an additional $1 per selection.</em></p>
+            <p><input type="checkbox" name="extra" value="soft drink">Soft Drink</p>
+            <p><input type="checkbox" name="extra" value="breadsticks">3 pack of breadsticks</p>
+            <p><input type="checkbox" name="extra" value="extra sauce">Extra sauce</p>
             <br>
-            <label for="numExtras">Please enter the number of extras you selected:
-            </label>
+            <label for="numExtras">Please enter the number of extras you selected:</label>
             <input id="numExtras" class="form-control" type="text">
             <br>
-            <button type="submit" class="btn btn-primary">Submit
-            </button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </div>
       <div id="result">
-        <h2>Your Receipt:
-        </h2>
+        <h2>Your Receipt:</h2>
         <ul>
-          <li>Size: 
-            <span id="pizza-size">
-            </span>
+          <li>Size:
+            <span id="pizza-size"></span>
           </li>
-          <li>Cheese: 
-            <span id="pizza-cheese">
-            </span>
+          <li>Cheese:
+            <span id="pizza-cheese"></span>
           </li>
-          <li>Toppings: 
-            <span id="pizza-toppings">
-            </span>
+          <li>Toppings:
+            <span id="pizza-toppings"></span>
           </li>
-          <li>Extras: 
-            <span id="pizza-extras">
-            </span>
+          <li>Extras:
+            <span id="pizza-extras"></span>
           </li>
-          <li>Price: 
-            <span id="pizza-price">
-            </span>
+          <li>Price:
+            <span id="pizza-price"></span>
           </li>
         </ul>
       </div>

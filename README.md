@@ -1,4 +1,4 @@
-# _{Pizza Parlor}_
+# _Pizza Parlor_
 
 #### _Ciao! Welcome to my online pizza parlor template. I used object orientation to build a makeshift pizza ordering application that adjusts the total cost according to how many toppings and extras the user has selected._
 
@@ -21,7 +21,7 @@ _The function of this application was to practice using my object orientation kn
 * _Open terminal_
 * _Create a desired directory to store repo clone using $ mkdir_
 * _Navigate to local directory in terminal and enter $ git clone https://github.com/kdrendel99/Pizza-Parlor.git_
-* _Use the '$ touch index.html' function to select, followed by '$ code .'_
+* _Use the '$ open index.html' function to open project in a local browser._
 
 ## Known Bugs
 
@@ -33,10 +33,17 @@ _The user is required to have to enter the amount of selections they made instea
 Describe: toppingsPrice();
 Test: "It increases the current price of the pizza by $.25 for each topping added."
 Expect(toppingsPrice(1)).toEqual(10.25);
+**Note: Base Price of pizza is $10.
 
 Describe: extrasPrice();
 Test: "It increases the current price of the pizza by $1 for each topping added."
 Expect(extrasPrice(1)).toEqual(11.00);
+**Note: Base Price of pizza is $10.
+
+Describe: finalCost():
+Test: "It will calculate the final cost of the pizza by running the two previous functions back to back."
+Expect(finalCost(toppingsPrice,extrasPrice)).toEqual(11.25); 
+**Note: the number above is based on the previous tests.
 
 ## License
 _MIT License_
